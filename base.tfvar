@@ -1,0 +1,15 @@
+# VPC with the appropriate security groups and subnets.
+
+resource "aws_vpc" "dev" {
+  cidr_block    = "10.0.0.0/16"
+}
+
+resource "aws_subnet" "bastion" {
+    vpc_id  = "public"
+    
+}
+
+resource "aws_subnet" "web" {
+    vpc_id = ""
+}
+
